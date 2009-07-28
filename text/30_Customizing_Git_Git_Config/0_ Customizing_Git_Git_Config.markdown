@@ -35,7 +35,7 @@ Voir toutes les options color.* dans la documentation de linkgit:git-config[1]
 	$ git config color.interactive auto
 	$ git config color.status auto
 
-Ou, vous pouvez tous les activer avec l'option color.ui:
+Ou, vous pouvez toutes les activer avec l'option color.ui:
 
 	$ git config color.ui true
 	
@@ -50,7 +50,7 @@ Ou, vous pouvez tous les activer avec l'option color.ui:
 
 ### Autres Options de Configuration ###
 
-Il y a aussi un grand nombre d'options intéressantes pour emballer, nettoyer,
-merger, créer des branches, pour le transport http, les diff, et plus.
+Il y a aussi un grand nombre d'options intéressantes pour archiver, nettoyer,
+fusionner, créer des branches, pour le transport http, les diff, et plus.
 Si vous voulez personnaliser toutes ces options, reportez-vous à
 la documentation de linkgit:git-config[1].

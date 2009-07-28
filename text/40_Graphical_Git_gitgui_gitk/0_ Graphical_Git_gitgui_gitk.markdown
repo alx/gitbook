@@ -1,7 +1,7 @@
 ## Git en Mode Graphique ##
 
-Git possède quelques interfaces graphiques assez populaires. Elles
-permettent de lire et/ou manipuler des dépôt Git.
+Git possède plusieurs interfaces graphiques assez populaires. Elles
+permettent de lire et/ou manipuler des dépôts Git.
 
 ### Les Interfaces Fournies ###
 
