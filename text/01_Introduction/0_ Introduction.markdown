@@ -34,7 +34,7 @@ scripts, avec des outils de déploiement, des éditeurs et d’autres
 choses. Cette section est faite pour vous aider à intégrer Git dans
 votre environnement.
 
-Enfin, nous auront une série d’articles sur la **documentation
+Enfin, nous aurons une série d’articles sur la **documentation
 bas-niveau** qui peut aider les « hackeurs » Git qui veulent apprendre le
 déroulement des fonctions internes et les protocoles de Git.
 
