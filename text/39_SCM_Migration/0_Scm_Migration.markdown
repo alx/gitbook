@@ -1,12 +1,12 @@
 ## Migration depuis un autre SCM ##
 
-Vous avez décidé de migrez depuis un autre système de contrôle de version
+Vous avez décidé de migrer depuis un autre système de contrôle de version
 et convertir l'intégralité de votre projet vers Git. Comment le faire
 facilement?
 
 ### Importation depuis Subversion ###
 
-Git est fournit avec un script nommé git-svn qui est une commande de clonage
+Git est fournit avec un script nommé git-svn : c'est une commande de clonage
 qui importe un dépôt subversion dans un nouveau dépôt git. Il existe aussi
 un outil gratuit sur le service GitHub qui fera cette manipulation pour
 vous.
@@ -27,7 +27,7 @@ C'est un script python qui importera un dépôt Perforce pour vous.
 
 ### Importation depuis un autre SCM ###
 
-Il y a d'autres SCMs listés en tête du Sondage Git, de la documentation est nécesaire
+Il y a d'autres SCMs listés en tête du Sondage Git, de la documentation est nécessaire
 pour eux. !!TODO!!
 
 * CVS

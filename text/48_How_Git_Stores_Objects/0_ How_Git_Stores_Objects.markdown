@@ -1,9 +1,9 @@
 ## Comment Git Stocke les Objets ##
 
-Ce chapitre s'enfouit dans les détails concernant le stockage physique
+Ce chapitre plonge dans les détails concernant le stockage physique
 des objets avec Git.
 
-Tous les objets sont stockés comme du contenu comprimés par leur valeur SHA.
+Tous les objets sont stockés comme du contenu compressé par leur valeur SHA.
 Il contiennent le type d'objet, la taille et le contenu au format gzip.
 
 Git garde les objets dans 2 formats: les objets détendus et les objets
@@ -11,9 +11,9 @@ packagés.
 
 ### Les Objets Détendus ###
 
-Le format le plus simple concerne les objets détendus. Ce n'est que des données
-comprimées stockées dans un seul fichier sur le disque. Chaque objet est écrit
-dans un fichier séparé.
+Le format le plus simple concerne les objets détendus. Ce ne sont que des
+données comprimées stockées dans un seul fichier sur le disque. Chaque objet est
+écrit dans un fichier séparé.
 
 Si le SHA de l'objet est <code>ab04d884140f7b0cf8bbf86d6883869f16a46f65</code>,
 alors le fichier sera stocké dans le chemin suivant:
@@ -56,7 +56,7 @@ devenir inefficace avec le format précédent Imaginez avoir un fichier long de
 quelques milliers de lignes et si on change une ligne, git enregistrera un
 second fichier dans son intégrité, cela serait un grand gaspillage d'espace.
 
-Afin de sauver cet espace, Git utilise le packfile. C'est une format où Git
+Afin d'économiser cet espace, Git utilise le packfile. C'est une format où Git
 ne va sauvegarder que la partie du fichier qui a changé dans le second
 fichier, avec un pointeur vers le fichier similaire.
 
