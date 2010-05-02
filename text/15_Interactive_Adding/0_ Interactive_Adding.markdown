@@ -17,7 +17,7 @@ vous montrera tous vos fichiers modifiés et leur état.
 	  5: patch	  6: diff	  7: quit	  8: help
 	What now> 
 
-Dans ce cas, nous pouvons voir cinq fichiers modifiés qui n’ont pas encore étés
+Dans ce cas, nous pouvons voir cinq fichiers modifiés qui n’ont pas encore été
 ajoutés à l’index (`unstaged`) et le nombre de lignes en plus ou en moins pour
 chacun d’eux. Nous trouvons aussi un menu interactif avec les possibilités de
 cet outil.
@@ -43,7 +43,7 @@ de ces fichiers (dans ce cas, 1-4) :
 	  5:    unchanged      +121/-0 text/14_Interactive_Rebasing/0_ Interactive_Rebasing.markdown
 	Update>> 
 
-Si je presse « entrée », je reviendrai au menu principal où je peux voir que
+Si je presse « entrée », je reviendrais au menu principal où je peux voir que
 l’état des fichiers a changé.
 
 	What now> status
@@ -54,7 +54,7 @@ l’état des fichiers a changé.
 	  4:        +3/-3      nothing script/pdf.rb
 	  5:    unchanged      +121/-0 text/14_Interactive_Rebasing/0_ Interactive_Rebasing.markdown
 
-Maintenant nous voyons que les quatres premiers fichiers sont assemblés et que le
+Maintenant nous voyons que les quatre premiers fichiers sont assemblés et que le
 dernier ne l’est pas encore. Ces informations sont simplement une compression
 de l’affichage obtenu avec la commande `git status` :
 

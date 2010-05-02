@@ -42,7 +42,7 @@ Voici la séquence de commande que vous utiliserez :
 	
 Utiliser le fusion subtree vous permet d'apporter moins de complications
 administratives aux utilisateurs de votre dépôt. Elle est aussi
-compatible avec des version plus anciennes de git (jusqu'à Git v1.5.2)
+compatible avec des versions plus anciennes de git (jusqu'à Git v1.5.2)
 et vous aurez le code juste après le clonage.
 
 Cependant, si vous utilisez des sous-modules, vous pouvez alors choisir

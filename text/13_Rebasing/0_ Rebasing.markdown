@@ -54,7 +54,7 @@ d’une fusion et l’exécution d'une recombinaison (rebase) :
 
 Dans le processus d’une recombinaison, des conflits peuvent se produire.
 Dans ce cas, le processus s’arrêtera et vous permettra de réparer ces conflits.
-Après les avoir fixés, utilisez `git-add` pour mettre à jour l’index avec ce
+Après les avoir résolus, utilisez `git-add` pour mettre à jour l’index avec ce
 nouveau contenu, puis, au lieu de lancer `git-commit`, lancez juste :
 
     $ git rebase --continue

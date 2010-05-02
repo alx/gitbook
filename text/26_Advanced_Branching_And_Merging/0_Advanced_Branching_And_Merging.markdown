@@ -7,24 +7,24 @@ Tous les changements que git peut fusionner automatiquement sont déjà ajoutés
 Il a une syntaxe peu commune:
 
     $ git diff
-    diff --cc file.txt
+    diff --cc fichier.txt
     index 802992c,2b60207..0000000
-    --- a/file.txt
-    +++ b/file.txt
+    --- a/fichier.txt
+    +++ b/fichier.txt
     @@@ -1,1 -1,1 +1,5 @@@
-    ++<<<<<<< HEAD:file.txt
+    ++<<<<<<< HEAD:fichier.txt
      +Hello world
     ++=======
     + Goodbye
-    ++>>>>>>> 77976da35a11db4580b80ae27e8d65caf5208086:file.txt
+    ++>>>>>>> 77976da35a11db4580b80ae27e8d65caf5208086:fichier.txt
 
 Souvenez-vous que le commit qui sera effectué après que nous ayons
 résolu ce conflit aura 2 parents: l'un sera le sommet de la branche courante
 (HEAD) et l'autre sera le sommet de la branche qui s'occupe de la fusion,
 stockée temporairement dans MERGE_HEAD.
 
-Durant le merge, l'index garde 3 versions de chaque fichiers. Une de ces 3
-"étape de fichier" représente une version différente du fichier:
+Durant le merge, l'index garde 3 versions de chaque fichier. Une de ces 3
+"étapes de fichier" représente une version différente du fichier:
 
 	$ git show :1:fichier.txt	# Le fichier dans l'ancêtre commun des 2 branches
 	$ git show :2:fichier.txt	# La version présente dans HEAD.
@@ -32,7 +32,7 @@ Durant le merge, l'index garde 3 versions de chaque fichiers. Une de ces 3
 
 Quand vous demandez à linkgit:git-diff[1] de vous montrer les conflits, il fait
 une différence en 3 points entre les résultats conflictuels de merge dans le
-répertoire de travail avec les version 2 et 3 pour montrer seulement
+répertoire de travail avec les versions 2 et 3 pour montrer seulement
 les morceaux de code qui ont du contenu de chaque côté, mélangés (en d'autres
 termes, quand un morceau du résultat de la fusion ne vient que de la version 2,
 alors ce morceau n'est pas en conflit est n'est pas affiché. Idem pour la
@@ -51,10 +51,10 @@ Après avoir résolu le conflit de manière évidente (mais avant de mettre à j
 l'index), le diff ressemblera à:
 
     $ git diff
-    diff --cc file.txt
+    diff --cc fichier.txt
     index 802992c,2b60207..0000000
-    --- a/file.txt
-    +++ b/file.txt
+    --- a/fichier.txt
+    +++ b/fichier.txt
     @@@ -1,1 -1,1 +1,1 @@@
     - Hello world
     -Goodbye
@@ -67,12 +67,12 @@ qui était avant absent des 2.
 Quelques options spéciales de diff permettent de faire la différence entre
 le répertoire de travail et les différentes étapes:
 
-    $ git diff -1 file.txt			# différence avec l'étape 1
-    $ git diff --base file.txt		# même chose que ci-dessus
-    $ git diff -2 file.txt			# différence avec l'étape 2
-    $ git diff --ours file.txt		# même chose que ci-dessus
-    $ git diff -3 file.txt			# différence avec l'étape 3
-    $ git diff --theirs file.txt	# même chose que ci-dessus
+    $ git diff -1 fichier.txt			# différence avec l'étape 1
+    $ git diff --base fichier.txt		# même chose que ci-dessus
+    $ git diff -2 fichier.txt			# différence avec l'étape 2
+    $ git diff --ours fichier.txt		# même chose que ci-dessus
+    $ git diff -3 fichier.txt			# différence avec l'étape 3
+    $ git diff --theirs fichier.txt	    # même chose que ci-dessus
 
 Les commandes linkgit:git-log[1] and linkgit:gitk[1] fournissent aussi de
 l'aide particulière pour les fusions :
@@ -81,7 +81,7 @@ l'aide particulière pour les fusions :
     $ gitk --merge
 
 Cela vous montrera tous les commits qui existent seulement dans HEAD ou dans
-MERGE_HEAD et qui concernant les fichiers non fusionnés.
+MERGE_HEAD et qui concernent les fichiers non fusionnés.
 
 Vous pouvez aussi utiliser linkgit:git-mergetool[1], qui vous permet de
 fusionner des fichiers non fusionnés en utilisant des outils externes comme

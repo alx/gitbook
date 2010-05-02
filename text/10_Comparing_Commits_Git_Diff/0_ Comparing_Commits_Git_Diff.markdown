@@ -11,7 +11,7 @@ vous pouvez utiliser trois points au lieu de deux :
 
     $ git diff master...test
 
-linkgit:git-diff[1] est un outils incroyablement utile pour trouver
+linkgit:git-diff[1] est un outil incroyablement utile pour trouver
 ce qui a changé entre deux points dans l’historique de votre projet ou
 pour voir quelle personne a essayé d’introduire une nouvelle
 branche, etc.

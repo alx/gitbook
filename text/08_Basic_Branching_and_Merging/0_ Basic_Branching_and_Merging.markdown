@@ -172,7 +172,7 @@ Normalement, un merge est un commit avec deux parents, un pour chacune des
 deux lignes de développement qui seront mergées.
 
 Cependant, si la branche courante n’a pas divergé de l’autre (tous
-les commit présent dans la branche courante sont déjà contenus dans l’autre
+les commits présents dans la branche courante sont déjà contenus dans l’autre
 branche) alors git ne fait qu’une « avance rapide » : le sommet (head) de la
 branche courante est alors avancé jusqu’au point du sommet de la branche à
 merger, sans qu’aucun commit ne soit créé.

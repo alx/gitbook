@@ -11,7 +11,7 @@ Il y a un seul répertoire Git par projet (au contraire des systèmes comme SVN
 ou CVS qui contiennent ce répertoire dans chaque sous-répertoire du projet).
 Ce dossier se nomme '.git' (par défaut, il peut être nommé différemment) et
 il se situe à la racine de votre projet. Si vous regardez le contenu
-de ce répertoire, vous pouvez y trouver tous vos fichiers important :
+de ce répertoire, vous pouvez y trouver tous vos fichiers importants :
 
     $>tree -L 1
     .
@@ -25,7 +25,7 @@ de ce répertoire, vous pouvez y trouver tous vos fichiers important :
     `-- refs/        # pointeurs vers vos branches
 
 (Vous pourrez trouver d’autres fichiers/dossiers ici aussi, mais ils ne sont pas
- important pour l’instant)
+ importants pour l’instant)
 
 ### Le répertoire de travail ###
 

@@ -14,7 +14,7 @@ vous pouvez activer le mode interactif en utilisant l’option `-i` ou
 	$ git rebase -i origin/master
 
 Cela lancera le mode interactif de recombinaison avec tous les commits
-que vous avez créé depuis votre dernière publication (ou la dernière
+que vous avez créés depuis votre dernière publication (ou la dernière
 fusion depuis le dépôt d’origine).
 
 Pour voir quels commits seront concernés, vous pouvez utiliser la
@@ -59,7 +59,7 @@ de sauvegarder le commit avec le même message qu’avant.
 
 Si `squash` est sélectionné, il combinera ce commit avec le précédent pour
 former un nouveau commit. Vous trouverez alors un autre éditeur pour fusionner
-les messages des deux commit qui ont étés assemblés ensemble. Donc, si vous
+les messages des deux commit qui ont été assemblés ensemble. Donc, si vous
 sortez du premier éditeur de la manière suivante :
 
 	pick   fc62e55 added file_size
@@ -95,7 +95,7 @@ vous devrez créer un nouveau message de commit à partir de ça :
 Une fois que vous aurez édité cette partie en un seul message et quitté
 l’éditeur, le commit sera sauvegardé avec votre nouveau message.
 
-Si vous avec sélectionné `edit`, la même chose se passera, mais une pause
+Si vous avez sélectionné `edit`, la même chose se passera, mais une pause
 sera marquée entre chaque commit pour vous donner la main avec une ligne de
 commande afin que vous puissiez modifier le commit ou son contenu.
 

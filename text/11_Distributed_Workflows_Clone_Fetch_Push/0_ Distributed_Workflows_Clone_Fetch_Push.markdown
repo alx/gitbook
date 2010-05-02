@@ -1,6 +1,6 @@
 ## Workflows distribués ##
 
-Supposons qu’Alice aie démarré un nouveau projet dans son dépôt git
+Supposons qu’Alice ait démarré un nouveau projet dans son dépôt git
 situé dans `/home/alice/project` et que Bob, qui a un répertoire
 utilisateur sur la même machine (`/home/bob/`), veuille y
 contribuer.
@@ -23,7 +23,7 @@ Quand il est prêt, il dit à Alice de récupérer (`pull`) ses changements
 depuis son dépôt situé dans `/home/bob/mondepot`. Alice fait alors :
 
     $ cd /home/alice/project
-    $ git pull /home/bob/myrepo master
+    $ git pull /home/bob/mondepot master
 
 Cela merge les changements de la branche `master` de Bob dans la branche
 courante d’Alice. Si Alice a fait ses propres changements pendant ce temps,
@@ -36,7 +36,7 @@ d’une branche distante et merge ces changements dans la branche courante.
 
 Quand vous travaillez dans une petite équipe soudée, il est courant
 que tous interagissent très souvent avec le même dépôt. En définissant un
-raccourci pour le dépôt « distant », nous pouvons rendre ces opération plus
+raccourci pour le dépôt « distant », nous pouvons rendre ces opérations plus
 simples :
 
     $ git remote add bob /home/bob/mondepot
@@ -75,7 +75,7 @@ modifications d’Alice en utilisant :
 
     $ git pull
 
-Il n’a besoin de donner le chemin vers le dépôt d’Alice. Quand Bob a cloné
+Il n’a pas besoin de donner le chemin vers le dépôt d’Alice. Quand Bob a cloné
 le dépôt d’Alice, git a stocké l’adresse de son dépôt dans la configuration
 du dépôt et cette adresse est utilisée pour récupérer les données avec `pull` :
 
@@ -109,11 +109,11 @@ Voir linkgit:git-push[1] et linkgit:gitcvs-migration[1].
 
 Une autre façon d’envoyer des modifications à un projet est d’avertir
 le chef de ce projet afin qu’il récupère les changements depuis votre
-dépôt en utilisant linkgit:git-pull[1]. C’est un manière d’obtenir les
+dépôt en utilisant linkgit:git-pull[1]. C’est une manière d’obtenir les
 mises à jours du dépôt principal mais cela fonctionne aussi dans
 l’autre sens.
 
-Si vous et le chef de projets avaient tous les deux un compte sur le même
+Si vous et le chef de projet avaient tous les deux un compte sur le même
 ordinateur, alors vous pouvez échanger les modifications de vos dépôts
 respectifs directement. Les commandes qui acceptent des URL de dépôts
 comme options, accepteront aussi un chemin de répertoire local :
@@ -205,7 +205,7 @@ alors elle échouera avec un message d’erreur comme celui-ci :
     Maybe you are not up-to-date and need to pull first?
     error: failed to push to 'ssh://yourserver.com/~you/proj.git'
 
-Cela peut arrivé, par exemple, si :
+Cela peut arriver, par exemple, si :
 
 	- vous avez utilisé `git-reset --hard` pour effacer un commit déjà publié ;
 	- vous avez utilisé `git-commit --amend` pour remplacer un commit déjà publié ;
