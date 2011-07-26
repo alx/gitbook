@@ -38,7 +38,7 @@ modifiés mais pas assemblés, et ceux qui ne sont pas suivis.
 Si vous effacez complètement l'index, vous ne perdrez généralement aucune
 information tant que vous avez le nom du tree qui est décrit.
 
-Grâce à cela, vous devriez avoir un bonne compréhension des bases de ce que
+Grâce à cela, vous devriez avoir une bonne compréhension des bases de ce que
 Git fait en arrière plan, et pourquoi il est différent de la plupart des
 autres systèmes de contrôle de version. Ne vous inquiétez pas si vous
 n'avez pas encore tout compris; nous reviendrons sur tous ces point dans
