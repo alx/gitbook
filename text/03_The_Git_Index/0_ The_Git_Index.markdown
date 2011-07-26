@@ -2,7 +2,7 @@
 
 L'index Git est une zone d'assemblage entre votre répertoire de travail
 et votre dépôt. Vous pouvez utiliser l'index pour construire un groupe de
-changements qui seront committés ensembles. Quand vous créez un commit, ce
+changements qui seront committés ensemble. Quand vous créez un commit, ce
 qui se trouve dans l'index est ce qui est committé, et non ce qui se trouve
 dans le répertoire de travail.
 

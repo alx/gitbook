@@ -162,7 +162,7 @@ Cependant, si vous ajoutez l'option '--topo-order', les commits
 apparaîtrons dans l'ordre topologique (i.e. les commits descendants
 sont affichés avant leurs parents). Si nous regardons le git log
 pour le dépôt de Grit dans un ordre topologique, vous pouvez voir
-que toutes les lignes de développement sont regroupées ensembles.
+que toutes les lignes de développement sont regroupées ensemble.
 
 	$ git log --pretty=format:'%h : %s' --topo-order --graph
 	*   4a904d7 : Merge branch 'idx2'
@@ -196,7 +196,7 @@ que toutes les lignes de développement sont regroupées ensembles.
 Vous pouvez aussi utiliser '--date-order', qui ordonne les commits par date.
 Cette option est similaire à '--topo-order' dans le sens où les parents seront affichés après
 tus leurs enfants, mais autrement les commits sont toujours ordonnés suivant la date. Vous
-pouvez voir ici que les lignes de développement sont groupées ensembles, et qu'elle
+pouvez voir ici que les lignes de développement sont groupées ensemble, et qu'elle
 s'éloignent quand un développement parallèle à lieu :
 
 	$ git log --pretty=format:'%h : %s' --date-order --graph
