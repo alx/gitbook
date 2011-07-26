@@ -41,6 +41,6 @@ information tant que vous avez le nom du tree qui est décrit.
 Grâce à cela, vous devriez avoir une bonne compréhension des bases de ce que
 Git fait en arrière plan, et pourquoi il est différent de la plupart des
 autres systèmes de contrôle de version. Ne vous inquiétez pas si vous
-n'avez pas encore tout compris; nous reviendrons sur tous ces point dans
+n'avez pas encore tout compris; nous reviendrons sur tous ces points dans
 les prochaines parties du livre. Maintenant, nous sommes prêts à installer,
 configurer et utiliser Git.
