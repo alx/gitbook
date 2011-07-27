@@ -26,7 +26,7 @@ de la situation en utilisant la commande linkgit:git-status[1] :
     #	modified:   file3
     #
 
-Si vous devez faire d'autres changements, faites le maintenant, puis
+Si vous devez faire d'autres changements, faites-le maintenant, puis
 ajoutez le contenu modifié à l'index. Enfin, "committez" vos
 changements comme ceci :
 
