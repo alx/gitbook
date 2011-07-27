@@ -116,9 +116,9 @@ Ou vous pouvez utiliser le format 'short' :
 	    Add diff-lcs dependency
 
 Vous pouvez aussi utiliser 'medium', 'full', 'fuller', 'email' ou 'raw'. Si ces
-format ne sont pas exactement ce dont vous avez besoin, vous pouvez créer votre
+formats ne sont pas exactement ce dont vous avez besoin, vous pouvez créer votre
 propre format avec l'option '--pretty=format' (voir la documentation de
-linkgit:git-log[1]) pour toutes les options de formatage.
+linkgit:git-log[1] pour toutes les options de formatage).
 
 	$ git log --pretty=format:'%h was %an, %ar, message: %s'
 	a6b444f was Scott Chacon, 5 days ago, message: dammit, this is the second time this has re
