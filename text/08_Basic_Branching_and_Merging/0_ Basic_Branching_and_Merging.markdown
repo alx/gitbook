@@ -63,7 +63,7 @@ afin de committer le résultat du merge. Enfin, lancez la commande :
 
     $ gitk
 
-Pour admirer la représentation graphique de l'historiqueobtenu.
+Pour admirer la représentation graphique de l'historique obtenu.
 
 Maintenant, vous pouvez effacer la branche "experimental" avec
 
