@@ -14,7 +14,7 @@ Si cela ne fonctionne pas, vous pouvez télécharger les paquets .deb ou
 
 [Stable Debs](http://www.backports.org/debian/pool/main/g/git-core/)
 
-Si vous préférer installer Git depuis le code source sur votre système
+Si vous préférez installer Git depuis le code source sur votre système
 Linux, cet article pourra vous aider :
 
 [Article : Installing Git on Ubuntu](http://chrisolsen.org/2008/03/10/installing-git-on-ubuntu/)
