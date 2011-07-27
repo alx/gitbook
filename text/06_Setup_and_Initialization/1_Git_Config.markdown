@@ -8,7 +8,7 @@ vos commits.
     $ git config --global user.email "schacon@gmail.com"
 
 Ces commandes vont créer un fichier dans votre répertoire utilisateur qui 
-sera utilisé par tout vos projets. Par défaut, ce fichier est
+sera utilisé par tous vos projets. Par défaut, ce fichier est
 *~/.gitconfig* et il contiendra quelque chose comme ça :
 
     [user]
