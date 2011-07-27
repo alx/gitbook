@@ -57,7 +57,7 @@ De nombreux systèmes de contrôle de version fournissent une commande
 "add" qui demande au système de surveiller les changements dans
 un nouveau fichier. La commande "add" de Git est plus simple et plus puissante :
  `git add` est utilisé à la fois pour les nouveaux fichiers et les fichiers 
-nouvellement modifiés. Dans les 2 cas, elle prend une capture des fichiers
+nouvellement modifiés. Dans les deux cas, elle prend une capture des fichiers
 fournis et assemble leur contenu dans l'index pour être prêt à être
 inclus dans le prochain commit.
 
