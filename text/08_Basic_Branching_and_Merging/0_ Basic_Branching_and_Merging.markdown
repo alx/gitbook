@@ -145,8 +145,8 @@ juste laisser ce message inchangé, mais vous pourrez ajouter un
 commentaire additionnel si vous le désirez.
 
 Cette partie contient donc tout ce que vous avez besoin de savoir pour
-résoudre un merge simple. Mais git peut vous fournir aussi plus
-d'information pour vous aider à résoudre les conflits.
+résoudre un merge simple. Mais git peut aussi vous fournir plus
+d'informations pour vous aider à résoudre les conflits.
 
 ### Annuler un merge ###
 
