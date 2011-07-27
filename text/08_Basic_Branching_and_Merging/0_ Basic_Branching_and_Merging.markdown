@@ -50,7 +50,7 @@ la branche "master", lancez :
 
 Si les changements ne créent pas de conflit, vous avez terminé.
 S'il y a des conflits, un marquage sera laissé dans les fichiers
-problématiques fin de vous montrer le conflit :
+problématiques afin de vous montrer le conflit :
 
     $ git diff
 
