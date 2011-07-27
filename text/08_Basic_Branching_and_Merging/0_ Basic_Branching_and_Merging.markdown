@@ -23,7 +23,7 @@ branche su laquelle vous vous trouvez. Tapez :
     $ git checkout experimental
 
 pour passer sur la branche "experimental". Éditez maintenant
-un fichier, committer le changement, et revenez sur la
+un fichier, committez le changement, et revenez sur la
 branche "master" :
 
     (éditer un fichier)
