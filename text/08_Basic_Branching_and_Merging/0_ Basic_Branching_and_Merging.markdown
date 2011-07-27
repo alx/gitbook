@@ -41,7 +41,7 @@ Vous pouvez faire un changement différent sur la branche
     (éditer un fichier)
     $ git commit -a
 
-à partir de maintenant, les 2 branches ont divergé et des changements
+A partir de maintenant, les 2 branches ont divergé et des changements
 différents on été faits dans chacune d'elles. Pour fusionner (merger)
 les changements effectués dans la branche "experimental" sur
 la branche "master", lancez :
@@ -59,7 +59,7 @@ fichiers pour résoudre les conflits, tapez :
 
     $ git commit -a
 
-Afin de committer le résultat du merge. Enfin, lancez la commande :
+afin de committer le résultat du merge. Enfin, lancez la commande :
 
     $ gitk
 
