@@ -100,7 +100,7 @@ L'avertissement peut ressembler à quelque chose comme ça :
     Automatic merge failed; fix conflicts and then commit the result.
 
 Des marqueurs de conflit sont ajoutés aux fichiers problématiques,
-et après les avoir résolu manuellement, vous pouvez
+et après les avoir résolus manuellement, vous pouvez
 mettre à jour l'index avec le nouveau contenu et lancer 
 `git commit`, comme vous le feriez quand vous modifiez un
 fichier.
