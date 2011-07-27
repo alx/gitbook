@@ -1,7 +1,7 @@
 ## Obtenir un Dépôt Git ##
 
 Maintenant que nous avons tout configuré, nous avons besoin d'un dépôt Git.
-Nous pouvons faire ça de 2 manière - soit en *clonant* un dépôt qui
+Nous pouvons faire ça de deux manières - soit en *clonant* un dépôt qui
 existe déjà, soit en *initialisant* un dépôt depuis un dossier vide ou 
 depuis des fichiers existants qui ne sont pas encore sous contrôle de version.
 
