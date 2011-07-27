@@ -70,15 +70,15 @@ Maintenant, vous pouvez effacer la branche "experimental" avec
     $ git branch -d experimental
 
 Cette commande s'assure que les changements de la branche
-"experimental" se trouve dans la branche courante.
+"experimental" se trouvent dans la branche courante.
 
 Si vous avez développé une idée saugrenue et que vous la regrettez, vous
 pouvez toujours effacer cette branche avec :
 
     $ git branch -D crazy-idea
 
-Les branches sont faciles à mettre en place et demande peu d'efforts,
-c'est donc un bon moyen de tester des choses nouvelles.
+Les branches sont faciles à mettre en place et demandent peu d'efforts,
+c'est donc un bon moyen de tester de nouvelles choses.
 
 ### Comment merger ###
 
