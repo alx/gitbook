@@ -82,7 +82,7 @@ c'est donc un bon moyen de tester de nouvelles choses.
 
 ### Comment merger ###
 
-Vous pouvez joindre 2 branches de développement divergentes
+Vous pouvez joindre deux branches de développement divergentes
 en utilisant linkgit:git-merge[1] :
 
     $ git merge titrebranche
