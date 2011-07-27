@@ -1,8 +1,8 @@
 ## Analyser l'Historique - Git Log ##
 
 La commande linkgit:git-log[1] vous montrera des listes de commits.
-Toute seule, elle vous montrera les commits visible depuis le commit
-parent de votre version courante; mais vous pouvez faire des
+Toute seule, elle vous montrera les commits visibles depuis le commit
+parent de votre version courante ; mais vous pouvez faire des
 requêtes plus spécifiques :
 
     $ git log v2.5..	    # commits depuis (non-visible depuis) v2.5
