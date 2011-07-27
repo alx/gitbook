@@ -150,7 +150,7 @@ d'informations pour vous aider à résoudre les conflits.
 
 ### Annuler un merge ###
 
-Si vous êtes bloqués et que vous décidez de laisser tomber en jetant tous vos
+Si vous êtes bloqué et que vous décidez de laisser tomber en jetant tous vos
 brouillons par la fenêtre, vous pouvez toujours revenir à l'état initial
 où vous vous trouviez avant le merge avec la commande :
 
@@ -161,7 +161,7 @@ Ou, si vous avez déjà committé le merge que vous voulez mettre à la poubelle
     $ git reset --hard ORIG_HEAD
 
 Cependant, cette dernière commande peut être dangereuse dans certains
-cas--ne jetez jamais un commit si celui-ci est lui même le merge
+cas ; ne jetez jamais un commit si celui-ci est lui-même le merge
 d'une autre branche, sinon vous risqueriez de rendre confus
 les prochains merges.
 
