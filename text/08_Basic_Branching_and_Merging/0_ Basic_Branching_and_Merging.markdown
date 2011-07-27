@@ -87,10 +87,10 @@ en utilisant linkgit:git-merge[1] :
 
     $ git merge titrebranche
 
-merge les changements faits dans la branche "titrebranche" avec la
-branche courante. Si il y a des conflits, comme par exemple un 
-même fichier modifié au même endroit de 2 façons différentes
-dans la branche distante et la branche locale, vous serez avertis.
+Cela va merger les changements faits dans la branche "titrebranche" avec la
+branche courante. S'il y a des conflits, comme par exemple un 
+même fichier modifié au même endroit de deux façons différentes
+dans la branche distante et la branche locale, vous serez averti.
 L'avertissement peut ressembler à quelque chose comme ça :
 
     $ git merge next
