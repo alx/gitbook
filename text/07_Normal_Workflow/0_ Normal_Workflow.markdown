@@ -12,8 +12,8 @@ l'option --cached :
     $ git diff --cached
 
 (Sans l'option --cached, linkgit:git-diff[1] vous montrera les
-changements que vous avez fait mais que vous n'avez pas encore
-ajouté à l'index.) Vous pouvez aussi trouver un résumé rapide
+changements que vous avez faits mais que vous n'avez pas encore
+ajoutés à l'index.) Vous pouvez aussi trouver un résumé rapide
 de la situation en utilisant la commande linkgit:git-status[1] :
 
     $ git status
