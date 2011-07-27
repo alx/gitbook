@@ -41,9 +41,9 @@ Comme vous pouvez le voir, un commit est défini par :
 Notez qu'un commit ne contient pas d'information à propos de ce qui a été
 modifié; tous les changements sont calculés en comparant les contenus du
 "tree" référencé dans ce commit avec le "tree" associé au(x) parent(s) du
-commit. En particulier, git n'essaye pas d'enregistrer le rennomage de fichier
+commit. En particulier, git n'essaye pas d'enregistrer le renommage de fichier
 explicitement, bien qu'il puisse identifier des cas où la persistance
-des données d'un fichier avec un chemin modifié suggère un rennomage. (Voir,
+des données d'un fichier avec un chemin modifié suggère un renommage. (Voir,
 par exemple, la commande linkgit:git-diff[1] avec l'option -M).
 
 Un commit est normalement créé avec la commande linkgit:git-commit[1], qui

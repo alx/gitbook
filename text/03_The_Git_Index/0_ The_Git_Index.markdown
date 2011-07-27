@@ -2,7 +2,7 @@
 
 L'index Git est une zone d'assemblage entre votre répertoire de travail
 et votre dépôt. Vous pouvez utiliser l'index pour construire un groupe de
-changements qui seront committés ensembles. Quand vous créez un commit, ce
+changements qui seront committés ensemble. Quand vous créez un commit, ce
 qui se trouve dans l'index est ce qui est committé, et non ce qui se trouve
 dans le répertoire de travail.
 
@@ -38,9 +38,9 @@ modifiés mais pas assemblés, et ceux qui ne sont pas suivis.
 Si vous effacez complètement l'index, vous ne perdrez généralement aucune
 information tant que vous avez le nom du tree qui est décrit.
 
-Grâce à cela, vous devriez avoir un bonne compréhension des bases de ce que
+Grâce à cela, vous devriez avoir une bonne compréhension des bases de ce que
 Git fait en arrière plan, et pourquoi il est différent de la plupart des
 autres systèmes de contrôle de version. Ne vous inquiétez pas si vous
-n'avez pas encore tout compris; nous reviendrons sur tous ces point dans
+n'avez pas encore tout compris; nous reviendrons sur tous ces points dans
 les prochaines parties du livre. Maintenant, nous sommes prêts à installer,
 configurer et utiliser Git.
