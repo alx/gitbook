@@ -117,7 +117,7 @@ les informations dont vous aurez besoin pour vous aider à résoudre
 le merge.
 
 Les fichiers en conflits sont marqués spécialement dans l'index,
-donc jusqu'à que vous ayez résolu le problème et mis à jour
+donc jusqu'à ce que vous ayez résolu le problème et mis à jour
 l'index, linkgit:git-commit[1] ne fonctionnera pas :
 
     $ git commit
