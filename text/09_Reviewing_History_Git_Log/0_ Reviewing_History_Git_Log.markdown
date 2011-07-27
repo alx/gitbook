@@ -148,14 +148,14 @@ l'historique des commits.
 
 Vous pouvez aussi voir les entrées de log dans des ordres différents.
 Notez que git log commence par le commit le plus récent et va
-à reculons vers ses parents; cependant, puisque l'historique de git
+à reculons vers ses parents ; cependant, puisque l'historique de git
 peut contenir de multiples lignes indépendantes de développement,
-l'ordre de l'affiche des commits est plutôt arbitraire.
+l'ordre de l'affichage des commits est plutôt arbitraire.
 
 Si vous voulez spécifier un ordre en particulier, vous pouvez ajouter
 une option à la commande git log.
 
-Par défaut les commit sont montrés dans l'ordre inversement
+Par défaut les commits sont montrés dans l'ordre inversement
 chronologique.
 
 Cependant, si vous ajoutez l'option '--topo-order', les commits
