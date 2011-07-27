@@ -69,7 +69,7 @@ Maintenant, vous pouvez effacer la branche "experimental" avec
 
     $ git branch -d experimental
 
-Cette commande s'assure que les changement de la branche
+Cette commande s'assure que les changements de la branche
 "experimental" se trouve dans la branche courante.
 
 Si vous avez développé une idée saugrenue et que vous la regrettez, vous
