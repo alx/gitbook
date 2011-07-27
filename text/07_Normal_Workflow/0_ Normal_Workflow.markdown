@@ -43,12 +43,12 @@ utiliser directement cette commande :
 Git trouvera automatiquement les fichiers modifiés (mais pas les nouveaux), 
 les ajoutera à l'index et les "committera", en une seule commande.
 
-Note sur le message du "commit" : Bien que ce ne soit pas
+Note sur le message du "commit" : bien que ce ne soit pas
 obligatoire, il est assez efficace de commencer le message du "commit"
 avec une courte ligne (moins de 50 caractères) qui résume le
 changement, suivi d'une ligne blanche, puis d'une description plus
 complète. Les outils qui transforment les commits en mail, par
-exemple, utilisent la première ligne du commit pour le Sujet du
+exemple, utilisent la première ligne du commit pour le sujet du
 mail, et le reste pour le contenu.
 
 #### Git surveille le contenu et non les fichiers ####
