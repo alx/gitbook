@@ -5,7 +5,7 @@ l'index :
 
     $ git add file1 file2 file3
 
-Vous être maintenant prêts pour le commit. Vous pouvez vérifier ce qui
+Vous êtes maintenant prêt pour le commit. Vous pouvez vérifier ce qui
 va être committé en utilisant la commande linkgit:git-diff[1] avec
 l'option --cached :
 
