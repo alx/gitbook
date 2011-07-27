@@ -1,7 +1,7 @@
 ### Linux ###
 
 Si vous utilisez Linux, vous devez pouvoir installer Git facilement depuis
-le gestionnaire de paquet de votre système :
+le gestionnaire de paquets de votre système :
 
     $ yum install git-core
 
