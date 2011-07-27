@@ -106,7 +106,7 @@ mettre à jour l'index avec le nouveau contenu et lancer
 fichier.
 
 Si vous analysez le résultat de ce commit avec gitk, vous verrez
-qu'il a 2 parents : l'un pointant vers le sommet de la branche
+qu'il a deux parents : l'un pointant vers le sommet de la branche
 courante, et l'autre pointant vers le sommet de l'autre branche.
 
 ### Résoudre un merge ###
