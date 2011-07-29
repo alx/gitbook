@@ -5,14 +5,14 @@ en utilisant linkgit:git-diff[1] :
 
     $ git diff master..test
 
-Cette commande produit une différence entre le sommet de 2 banches.
+Cette commande produit une différence entre le sommet de deux branches.
 Si vous préférez trouver la différence de leur ancêtre commun,
-vous pouvez utiliser 3 points au lieu de 2 :
+vous pouvez utiliser trois points au lieu de deux :
 
     $ git diff master...test
 
-linkgit:git-diff[1] est un outils incroyablement utile pour trouver
-ce qui a changé entre 2 points dans l'historique de votre projet, ou
+linkgit:git-diff[1] est un outil incroyablement utile pour trouver
+ce qui a changé entre deux points dans l'historique de votre projet, ou
 pour voir quelle personne a essayé d'introduire une nouvelle
 branche, etc.
 
@@ -37,7 +37,7 @@ Enfin, vous pouvez lancer
 
     $ git diff HEAD
 
-pour afficher les changements de votre le répertoire de travail depuis
+pour afficher les changements de votre répertoire de travail depuis
 votre dernier commit; ces changements seront committés si vous lancez
 "git commit -a".
 
@@ -62,8 +62,8 @@ la branche actuelle), en limitant la comparaison aux fichiers dans le
 répertoire 'lib'.
 
 Si vous ne voulez pas voir le patch complet, vous pouvez ajouter
-l'option '--stat', qui limitera la sortie aux noms de fichier qui ont
-changés, accompagné d'un petit graphe décrivant le nombre de lignes
+l'option '--stat', qui limitera la sortie aux noms de fichiers qui ont
+changés, accompagnée d'un petit graphe décrivant le nombre de lignes
 différentes dans chaque fichier.
 
     $>git diff --stat
@@ -78,4 +78,4 @@ différentes dans chaque fichier.
      .../0_ Hosting_Git_gitweb_repoorcz_github.markdown |    4 +-
      9 files changed, 115 insertions(+), 6 deletions(-)
 
-Cela permet parfois de voir plus facilement les changements effectués
+Cela permet parfois de voir plus facilement les changements effectués.
