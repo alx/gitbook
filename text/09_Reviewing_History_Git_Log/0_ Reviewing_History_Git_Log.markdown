@@ -195,7 +195,7 @@ que toutes les lignes de développement sont regroupées ensemble.
 
 Vous pouvez aussi utiliser '--date-order', qui ordonne les commits par date.
 Cette option est similaire à '--topo-order' dans le sens où les parents seront affichés après
-tus leurs enfants, mais autrement les commits sont toujours ordonnés suivant la date. Vous
+tous leurs enfants, mais autrement les commits sont toujours ordonnés suivant la date. Vous
 pouvez voir ici que les lignes de développement sont groupées ensemble, et qu'elle
 s'éloignent quand un développement parallèle à lieu :
 
