@@ -1,6 +1,6 @@
 ## Comparer les Commits - Git Diff ##
 
-Vous pouvez générer les différences entres 2 version de votre projet
+Vous pouvez générer les différences entre deux versionis de votre projet
 en utilisant linkgit:git-diff[1] :
 
     $ git diff master..test
