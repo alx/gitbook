@@ -1,6 +1,6 @@
 ## Workflows Distribués ##
 
-Supposons qu'Alice a démarré un nouveau projet dans son dépôt git
+Supposons qu'Alice ait démarré un nouveau projet dans son dépôt git
 situé dans /home/alice/project, et que Bob, qui a un répertoire
 utilisateur sur la même machine (/home/bob/), veuille y
 contribuer.
@@ -25,18 +25,18 @@ depuis son dépôt situé dans /home/bob/mondepot. Alice fait alors :
     $ cd /home/alice/project
     $ git pull /home/bob/myrepo master
 
-Cela merge les changement de la branche "master" de Bob dans la branche
+Cela merge les changements de la branche "master" de Bob dans la branche
 courante d'Alice. Si Alice a fait ses propres changements pendant ce temps,
-alors elle devra peut être réparer quelques conflit à la main. (Notes l'option
+alors elle devra peut être réparer quelques conflit à la main. (Notez l'option
 "master" dans la commande ci-dessus, elle n'est pas nécessaire car c'est
 l'option par défaut.)
 
-La commande "pull" travaille donc en 2 étapes : elle récupère les changements
+La commande "pull" travaille donc en deux étapes : elle récupère les changements
 d'une branche distante, et merge ces changements dans la branche courante.
 
 Quand vous travaillez dans une petite équipe soudée, il est courant
 que tous interagissent très souvent avec le même dépôt. En définissant un
-raccourci pour le dépôt 'distant', nous pouvons rendre ces opération plus
+raccourci pour le dépôt 'distant', nous pouvons rendre ces opérations plus
 simples :
 
     $ git remote add bob /home/bob/mondepot
@@ -48,8 +48,8 @@ avec sa propre branche :
     $ git fetch bob
 
 Contrairement à la version longue, quand Alice récupère (fetch) les
-données de Bob en utilisant un raccourci configuré avec 'git remote'.
-alors ce qui est récupéré est stocké dans une branche de suivi distant,
+données de Bob en utilisant un raccourci configuré avec 'git remote',
+alors ce qui est récupéré est stocké dans une branche de suivi distante,
 dans notre cas 'bob/master'. Donc maintenant :
 
     $ git log -p master..bob/master
@@ -68,14 +68,14 @@ sa propre branche de suivi distant, comme ceci :
     $ git pull . remotes/bob/master
 
 Git récupère toujours les merges dans la branche courante,
-quelques soient les options de la ligne de commande.
+quelles que soient les options de la ligne de commande.
 
 Plus tard, Bob peut mettre à jour son dépôt avec les dernières
 modifications d'Alice en utilisant :
 
     $ git pull
 
-Il n'a besoin de donner le chemin vers le dépôt d'Alice ; quand Bob a cloné
+Il n'a pas besoin de donner le chemin vers le dépôt d'Alice ; quand Bob a cloné
 le dépôt d'Alice, git a stocké l'adresse de son dépôt dans la configuration
 du dépôt, et cette adresse est utilisée pour récupérer les données avec 'pull' :
 
@@ -105,15 +105,15 @@ Git peut aussi être utilisé de manière plus similaire à CVS, avec un dépôt
 central sur lequel de nombreux utilisateurs envoient leur modifications ;
 voir linkgit:git-push[1] et linkgit:gitcvs-migration[1].
 
-### Les Dépôt Git Publiques ###
+### Les Dépôts Git Publiques ###
 
 Une autre façon d'envoyer des modifications à un projet est d'avertir
 le chef de ce projet afin qu'il récupère les changements depuis votre
-dépôt en utilisant linkgit:git-pull[1]. C'est un manière d'obtenir les
-mises à jours du dépôt principal, mais cela fonctionne aussi dans
+dépôt en utilisant linkgit:git-pull[1]. C'est une manière d'obtenir les
+mises à jour du dépôt principal, mais cela fonctionne aussi dans
 l'autre sens.
 
-Si vous et le chef de projets avez tous les deux un compte sur le même
+Si vous et le chef de projet avez tous les deux un compte sur le même
 ordinateur, alors vous pouvez échanger les modifications de vos dépôts
 respectifs directement ; les commandes qui acceptent des URL de dépôts
 comme options, accepteront aussi un chemin de répertoire local :
@@ -137,9 +137,9 @@ et visibles.
 Vous continuerez à travailler au jour-le-jour sur votre dépôt personnel,
 mais périodiquement vous enverrez (push) les modifications de votre
 dépôt personnel sur votre dépôt publique, permettant alors aux autres
-développeurs de récupérer (pull) les changements disponible dans ce dépôt.
+développeurs de récupérer (pull) les changements disponibles dans ce dépôt.
 Donc le flux de travail, dans une situation où un autre développeur 
-fournit des changement dans son dépôt publique, ressemble à ça :
+fournit des changements dans son dépôt publique, ressemble à ça :
 
                                vous envoyez (push)
       votre dépôt personnel ---------------------------> votre dépôt publique
