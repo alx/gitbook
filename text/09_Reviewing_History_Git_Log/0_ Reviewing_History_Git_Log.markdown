@@ -196,7 +196,7 @@ que toutes les lignes de développement sont regroupées ensemble.
 Vous pouvez aussi utiliser '--date-order', qui ordonne les commits par date.
 Cette option est similaire à '--topo-order' dans le sens où les parents seront affichés après
 tous leurs enfants, mais autrement les commits sont toujours ordonnés suivant la date. Vous
-pouvez voir ici que les lignes de développement sont groupées ensemble, et qu'elle
+pouvez voir ici que les lignes de développement sont groupées ensemble, et qu'elles
 s'éloignent quand un développement parallèle à lieu :
 
 	$ git log --pretty=format:'%h : %s' --date-order --graph
