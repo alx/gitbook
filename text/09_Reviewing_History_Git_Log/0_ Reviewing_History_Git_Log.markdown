@@ -1,8 +1,8 @@
 ## Analyser l'Historique - Git Log ##
 
 La commande linkgit:git-log[1] vous montrera des listes de commits.
-Toute seule, elle vous montrera les commits visible depuis le commit
-parent de votre version courante; mais vous pouvez faire des
+Toute seule, elle vous montrera les commits visibles depuis le commit
+parent de votre version courante ; mais vous pouvez faire des
 requêtes plus spécifiques :
 
     $ git log v2.5..	    # commits depuis (non-visible depuis) v2.5
@@ -116,9 +116,9 @@ Ou vous pouvez utiliser le format 'short' :
 	    Add diff-lcs dependency
 
 Vous pouvez aussi utiliser 'medium', 'full', 'fuller', 'email' ou 'raw'. Si ces
-format ne sont pas exactement ce dont vous avez besoin, vous pouvez créer votre
+formats ne sont pas exactement ce dont vous avez besoin, vous pouvez créer votre
 propre format avec l'option '--pretty=format' (voir la documentation de
-linkgit:git-log[1]) pour toutes les options de formatage.
+linkgit:git-log[1] pour toutes les options de formatage).
 
 	$ git log --pretty=format:'%h was %an, %ar, message: %s'
 	a6b444f was Scott Chacon, 5 days ago, message: dammit, this is the second time this has re
@@ -148,18 +148,18 @@ l'historique des commits.
 
 Vous pouvez aussi voir les entrées de log dans des ordres différents.
 Notez que git log commence par le commit le plus récent et va
-à reculons vers ses parents; cependant, puisque l'historique de git
+à reculons vers ses parents ; cependant, puisque l'historique de git
 peut contenir de multiples lignes indépendantes de développement,
-l'ordre de l'affiche des commits est plutôt arbitraire.
+l'ordre de l'affichage des commits est plutôt arbitraire.
 
 Si vous voulez spécifier un ordre en particulier, vous pouvez ajouter
 une option à la commande git log.
 
-Par défaut les commit sont montrés dans l'ordre inversement
+Par défaut les commits sont montrés dans l'ordre inversement
 chronologique.
 
 Cependant, si vous ajoutez l'option '--topo-order', les commits
-apparaîtrons dans l'ordre topologique (i.e. les commits descendants
+apparaîtront dans l'ordre topologique (i.e. les commits descendants
 sont affichés avant leurs parents). Si nous regardons le git log
 pour le dépôt de Grit dans un ordre topologique, vous pouvez voir
 que toutes les lignes de développement sont regroupées ensemble.
@@ -195,9 +195,9 @@ que toutes les lignes de développement sont regroupées ensemble.
 
 Vous pouvez aussi utiliser '--date-order', qui ordonne les commits par date.
 Cette option est similaire à '--topo-order' dans le sens où les parents seront affichés après
-tus leurs enfants, mais autrement les commits sont toujours ordonnés suivant la date. Vous
-pouvez voir ici que les lignes de développement sont groupées ensemble, et qu'elle
-s'éloignent quand un développement parallèle à lieu :
+tous leurs enfants, mais autrement les commits sont toujours ordonnés suivant la date. Vous
+pouvez voir ici que les lignes de développement sont groupées ensemble, et qu'elles
+s'éloignent quand un développement parallèle a lieu :
 
 	$ git log --pretty=format:'%h : %s' --date-order --graph
 	*   4a904d7 : Merge branch 'idx2'

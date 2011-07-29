@@ -57,7 +57,7 @@ visibles depuis "master" mais pas des autres sommets:
     				grep -v '^refs/heads/master' )
 
 Évidemment, des variations illimités sont possibles, par exemple, pour
-afficher tous les commits visible de certains sommets mais pas de ceux
+afficher tous les commits visibles de certains sommets mais pas de ceux
 contenant des tags dans le dépôt:
 
     $ gitk $( git show-ref --heads ) --not  $( git show-ref --tags )
