@@ -159,7 +159,7 @@ Par défaut les commits sont montrés dans l'ordre inversement
 chronologique.
 
 Cependant, si vous ajoutez l'option '--topo-order', les commits
-apparaîtrons dans l'ordre topologique (i.e. les commits descendants
+apparaîtront dans l'ordre topologique (i.e. les commits descendants
 sont affichés avant leurs parents). Si nous regardons le git log
 pour le dépôt de Grit dans un ordre topologique, vous pouvez voir
 que toutes les lignes de développement sont regroupées ensemble.
