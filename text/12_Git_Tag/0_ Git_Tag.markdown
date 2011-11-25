@@ -8,20 +8,20 @@ linkgit:git-tag[1] en spécifiant le nom du tag et le nom SHA1 du commit
 
     $ git tag stable-1 1b2e1d63ff
 
-Après ça, nous pouvons utilisé stable-1 pour faire référence au commit 1b2e1d63ff.
+Après ça, nous pouvons utiliser stable-1 pour faire référence au commit 1b2e1d63ff.
 
 Ceci est un "tag léger", car aucune branche n'a été créée durant le processus.
 Si vous voulez aussi rajouter un commentaire à ce tag, et le signer
-avec un méthode cryptographique, alors nous allons plutôt créer un *objet tag*.
+avec une méthode cryptographique, alors nous allons plutôt créer un *objet tag*.
 
 ### Les Objets Tags ###
 
-Si une de ces options : **-a**, **-s**, ou **-u <key-id>** est passé en argument
+Si une de ces options : **-a**, **-s**, ou **-u <key-id>** est passée en argument
 de la commande, alors nous créons un objet tag qui nécessite un message tag.
 À moins que l'option -m <msg> ou -F <file> ne soit fournie, un éditeur se lance
 pour que l'utilisateur saisisse le message du tag.
 
-Quand cela se produit, un nouvel objet est ajouté à la base de donnée objet
+Quand cela se produit, un nouvel objet est ajouté à la base de données objet
 de Git et la référence tag pointe vers cet _objet tag_, plutôt que sur le
 commit lui-même. Ce concept est utile car vous pouvez maintenant signer le
 tag, et vérifier plus tard que le commit correspond. Vous pouvez créer un
@@ -31,7 +31,7 @@ objet tag comme ceci :
 
 Il est possible de tagger n'importe quel objet, mais le taggage des objets
 "commit" est la pratique la plus courante. (Dans les sources du kernel Linux,
-le premier objet tag fait référence à un "tree", plutôt qu'un "commit").
+le premier objet tag fait référence à un "tree", plutôt qu'à un "commit").
 
 ### Signature des Tags ###
 
