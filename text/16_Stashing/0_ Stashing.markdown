@@ -8,7 +8,7 @@ travail, et une fois le bug éliminé (ou, éventuellement, en revenant sur
 la branche après l'avoir corrigé sur une branche différente), retrouver
 les changement du travail en cours.
 
-    $ git stash "travail en cours de la fonctionnalité conquerir-le-monde"
+    $ git stash save "travail en cours de la fonctionnalité conquerir-le-monde"
 
 Cette commande sauvegardera vos changement dans le `stash`, et
 remettra à zéro votre répertoire de travail et l'index afin de 
