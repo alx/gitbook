@@ -1,7 +1,7 @@
 ## Le Packfile ##
 
 Ce chapitre explique en détails, au bit près, comment le packfile et
-les fichier d'index de pack sont formatés.
+les fichiers d'index de pack sont formatés.
 
 ### L'Index Packfile ###
 
@@ -15,7 +15,7 @@ v1.5.2, et qui a aussi était portée sur la v1.4.4.5 sur vous travaillez
 toujours dans la série 1.4.
 
 La version 2 inclue un checksum CRC pour chaque objet afin que les données
-compressées puissent être copiées directement entre les pack durant les
+compressées puissent être copiées directement entre les packs durant les
 re-package sans se retrouver avec de données corrumpues non-détectées.
 Les index de version 2 peuvent aussi s'occuper de packfiles supérieurs
 à 4Go.
@@ -23,7 +23,7 @@ Les index de version 2 peuvent aussi s'occuper de packfiles supérieurs
 [fig:packfile-index]
 
 Dans les 2 formats, la table de routage (fanout) est simplement 
-un manière plus rapide de trouver dans le fichier d'index l'offset
+une manière plus rapide de trouver dans le fichier d'index l'offset
 d'un SHA particulier. Les tables offset/sha1[] sont triées par
 valeurs sha1[]  (cela permet les recherches binaires sur cette table),
 et la table fanout[] pointe vers la table offset/sha1[] de façon spécifique
@@ -32,12 +32,12 @@ par un bit en particulier afin qu'ils puissent être trouvés en évitant les
 8 itérations de la recherche binaire).
 
 Dans la version 1, les offsets et SHAs sont au même endroit, alors que dans la
-version 2, il y a des tables séparés pour les SHAs, les checksums CRC et les
+version 2, il y a des tables séparées pour les SHAs, les checksums CRC et les
 offsets. Les checksums SHAs pour le fichier d'index et le packfile se trouvent
 à la fin de chacun de ces fichiers.
 
-Il es important de noter que les index de packfile *ne sont pas* nécessaires
-pour extraire les objets d'un packfile, ils sont juste utilisé pour retrouver
+Il est important de noter que les index de packfile *ne sont pas* nécessaires
+pour extraire les objets d'un packfile, ils sont juste utilisés pour retrouver
 *rapidement* des objets individuels depuis un pack. Le format du packfile est
 utilisé dans les programmes upload-pack et receive-pack (protocoles de
 publication - push - et de récupération - fetch) pour transférer les objets,
@@ -46,11 +46,11 @@ scannant le packfile.
 
 ### Le Format du Packfile ###
 
-Le format du packfile même est très simple. Il y a une entête, une série
+Le format du packfile même est très simple. Il y a un entête, une série
 d'objets packagés (chacun avec sa propre entête et son propre corps), puis
-un checksum à la fin. Les 4 premiers bits forment a chaîne de caractère "PACK",
-qui est utilisée pour être sûr que vous lisez correctement le début du packfile.
-Ceci est suivi d'un numéro de version du packfile sur 4 bits, puis 4 autres bis
+un checksum à la fin. Les 4 premiers bits forment la chaîne de caractère "PACK",
+qui est utilisée pour être sûr que vous lisiez correctement le début du packfile.
+Ceci est suivi d'un numéro de version du packfile sur 4 bits, puis 4 autres bits
 représentant le nombre d'entrées dans ce fichier. En Ruby, vous pourriez lire
 les données de l'entête de cette manière:
 
@@ -76,15 +76,15 @@ réellement que 7 bits de données, le premier bit ne disant que si cet octet
 est le dernier avant que ne commence les données. Si le premier bit est 1, vous
 pourrez continuer à lire le prochain octet. sinon les données commencent au
 prochain octet. Les 3 premiers bits du premier octet spécifient le type de
-données, en accord avec la table ci-dessous.
+donnée, en accord avec la table ci-dessous.
 
 (Actuellement, sur les 8 valeurs qui peuvent être exprimées avec 3 bits (0-7),
-0 (000) est 'undefined' et 5 (101) n'est pas encore utilisée.)
+0 (000) est 'undefined' et 5 (101) n'est pas encore utilisé.)
 
 Nous pouvons voir ici un exemple d'entête de 2 octets, où le premier spécifie
 que les données suivantes sont un commit, et le le reste des bits du premier octet
 accompagnés de ceux du second octet spécifient que les données feront 144 octets
-une fois décomprimés.
+une fois décompressées.
 
 [fig:packfile-logic]
 
