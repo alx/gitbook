@@ -2,15 +2,15 @@
 
 Git fournit plusieurs méthodes pour réparer vos erreurs durant
 votre développement. Choisir la bonne méthode dépend si
-si vous avez committé ou non votre erreur, et si elle a été
+vous avez committé ou non votre erreur, et si elle a été
 committée, si cette erreur a déjà été récupérée par un autre
 développeur.
 
 ### Réparer une erreur non-committée ###
 
-Si vous vous Êtres embrouillez dans votre répertoire de travail, mais
+Si vous vous êtes embrouillé dans votre répertoire de travail, mais
 que vous n'avez pas encore committé vos erreurs, vous pouvez retrouver
-l'intégrité de votre répertoire dans l'état qu'il était après le dernier
+l'intégrité de votre répertoire dans l'état où il était après le dernier
 commit en utilisant:
 
     $ git reset --hard HEAD
@@ -32,9 +32,9 @@ commande restaurera  hello.rb à la version de la révision HEAD, afin que
 "git diff hello.rb" et "git diff --cached hello.rb" ne retourne aucune
 différence.
 
-### Réparer une erreurs committée ###
+### Réparer une erreur committée ###
 
-Si vous avez déjà committé ce que vous n'auriez pas du, il y a 2 façons
+Si vous avez déjà committé ce que vous n'auriez pas dû, il y a 2 façons
 fondamentalement différentes de régler le problème:
 
 1. vous pouvez créer un nouveau commit qui annule les changements
@@ -44,7 +44,7 @@ fondamentalement différentes de régler le problème:
 2. Vous pouvez revenir en arrière et modifier l'ancien commit. Vous ne
 	devriez jamais faire ça si vous avez déjà rendu l'historique publique;
 	git n'est pas conçu pour que l'historique d'un projet change, et ne
-	peut pas effectuer correctement des merges répétés sur depuis branche
+	peut pas effectuer correctement des merges répétés sur la branche
 	qui a vu son historique changer.
 
 #### Réparer une erreur sur un nouveau commit ####
@@ -75,7 +75,7 @@ que vous devez réparer ce commit, les versions récentes de
 linkgit:git-commit[1] vous donnent accès à l'option **--amend** qui
 demande à git de remplacer le commit de HEAD par un autre, basé sur
 le contenu actuel de l'index. Cela vous donne l'opportunité d'ajouter
-de fichiers que vous avez oubliés ou de corriger des erreurs de typo
+des fichiers que vous avez oublié ou de corriger des erreurs de typo
 dans le message du commit, avant de publier les changements pour les
 autre développeurs.
 
