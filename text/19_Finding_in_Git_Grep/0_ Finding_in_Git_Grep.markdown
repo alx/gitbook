@@ -3,7 +3,7 @@
 Il est très facile de trouver des fichiers avec des mots ou des phrases
 avec la commande linkgit:git-grep[1]. Il est aussi possible de le faire
 avec la commande 'grep' unix, mais vous pouvez faire des recherches sur
-vos version précédentes avec 'git grep' sans avoir à les rapatrier.
+vos versions précédentes avec 'git grep' sans avoir à les rapatrier.
 
 Par exemple, si je veux voir tous les endroits qui appellent 'xmmap' dans
 mon dépôt git.git, je pourrai lancer ça:
@@ -49,7 +49,7 @@ l'option '--name-only':
 	sha1_file.c
 	wrapper.c
 
-Nous pouvons aussi voir combien lignes correspondent dans chaque fichier
+Nous pouvons aussi voir combien de lignes correspondent dans chaque fichier
 avec l'option '-c':
 
 	$>git grep -c xmmap

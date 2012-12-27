@@ -1,7 +1,7 @@
 ## Navigation dans les Objets Git ##
 
 Nous pouvons demander à git des informations à propos d'un objet
-particulier avec la commande cat-file. Vous pouvez utilise le SHA
+particulier avec la commande cat-file. Vous pouvez utiliser le SHA
 partiel pour éviter de saisir les 40 caractères:
 
     $ git-cat-file -t 54196cc2
@@ -15,7 +15,7 @@ partiel pour éviter de saisir les 40 caractères:
 
 Un "tree" peut référencer un ou plusieurs objets "blob", chacun correspondant
 à un fichier. En plus, un "tree" peut aussi référencer d'autres objets "tree",
-créant ainsi une hiérarchie de dossier. Vous pouvez examiner le contenu
+créant ainsi une hiérarchie de dossiers. Vous pouvez examiner le contenu
 de n'importe quel "tree" en utilisant ls-tree (souvenez-vous qu'une portion
 suffisamment longue du SHA1 fonctionnera aussi):
 
@@ -57,11 +57,11 @@ Tous les objets sont stockés sous leur nom SHA1 dans le répertoire git:
     .git/objects/c4/d59f390b9cfd4318117afde11d601c1085f241
 
 et le contenu de ces fichiers n'est que des données comprimées avec
-une entête identifiant leur type et leur taille. Le type peut être
+un entête identifiant leur type et leur taille. Le type peut être
 un blob, un tree, un commit, ou un tag.
 
-Le commit le plus simple à trouver est le commit HEAD, qui peut être
-trouvé dans .git/HEAD:
+Le commit le plus simple à trouver est le commit HEAD, qui est
+dans .git/HEAD:
 
     $ cat .git/HEAD
     ref: refs/heads/master
