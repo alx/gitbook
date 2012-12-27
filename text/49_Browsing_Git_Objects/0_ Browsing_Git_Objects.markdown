@@ -1,7 +1,7 @@
 ## Navigation dans les Objets Git ##
 
 Nous pouvons demander à git des informations à propos d'un objet
-particulier avec la commande cat-file. Vous pouvez utilise le SHA
+particulier avec la commande cat-file. Vous pouvez utiliser le SHA
 partiel pour éviter de saisir les 40 caractères:
 
     $ git-cat-file -t 54196cc2
