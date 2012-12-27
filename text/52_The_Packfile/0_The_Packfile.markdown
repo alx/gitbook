@@ -104,7 +104,7 @@ au début des données, alors que <code>ofs-delta</code> stocke un offset
 des cas, vous devez suivre 2 contraintes importantes si vous voulez
 ré-implémenter ce fonctionnement:
 
-* la représentation du delta doit être basée sur quelqu'autre objet
+* la représentation du delta doit être basée sur un autre objet
 	à l'intérieur du même packfile;
 * l'objet de base doit être de même type sous-jacent (blob, tree, commit
 	ou tag);
