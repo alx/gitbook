@@ -1,7 +1,7 @@
 ## Ajout Interactif ##
 
 Il est vraiment intéressant de travailler et de visualiser l'index de Git avec
-les ajouts interactifs. Pour le démarrer, tape simplement 'git add -i'. Git
+les ajouts interactifs. Pour le démarrer, tapez simplement 'git add -i'. Git
 vous montrera tous vos fichiers modifiés et leur état.
 
 	$>git add -i
@@ -20,7 +20,7 @@ vous montrera tous vos fichiers modifiés et leur état.
 Dans ce cas, nous pouvons voir 5 fichiers modifiés qui n'ont pas encore étés
 ajoutés à l'index (unstaged), et le nombre de lignes en plus ou en moins pour
 chacun d'eux. Nous trouvons aussi un menu interactif avec les possibilités de
-cet outils.
+cet outil.
 
 Si nous voulons rajouter les fichiers dans l'index, nous pouvons taper '2'
 ou 'u' pour le mode de mise à jour (update). Après, nous devons sélectionner
@@ -56,7 +56,7 @@ l'état des fichiers a changé.
 
 Maintenant nous voyons que les 4 premiers fichiers sont assemblés et que le
 dernier ne l'est pas encore. Ces informations sont simplement une compression
-de l'affichage obtenu avec la command 'git status':
+de l'affichage obtenu avec la commande 'git status':
 
 	$ git status
 	# On branch master
@@ -100,7 +100,7 @@ mais pas tous:
 	5:    unchanged      +121/-0 text/14_Interactive_Rebasing/0_ Interactive_Rebasing.markdown
 	6:    unchanged       +85/-0 text/15_Interactive_Adding/0_ Interactive_Adding.markdown
 
-Quand vous avez terminer de modifier votre index avec 'git add -i',
+Quand vous avez terminé de modifier votre index avec 'git add -i',
 il vous suffit de quitter (7: quit) et de lancer 'git commit' pour committer
 les changements assemblés. Souvenez-vous de **ne pas lancer** 'git commit -a',
 cela effacerait tous les précieuses sélections que vous avez faites dans le

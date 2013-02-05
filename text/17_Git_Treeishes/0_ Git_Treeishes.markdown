@@ -7,7 +7,7 @@ références 'treeish'.
 ### Sha Partiel ###
 
 Si le sha de votre commit est '<code>980e3ccdaac54a0d4de358f3fe5d718027d96aae</code>',
-git le reconnaîtra aussi avec les chaîne suivante:
+git le reconnaîtra aussi avec les chaînes suivantes:
 
 	980e3ccdaac54a0d4de358f3fe5d718027d96aae
 	980e3ccdaac54a0d4
@@ -41,7 +41,7 @@ Ce qui signifie que les commandes suivantes vous donneront le même résultat:
 	
 ### Spécification de Date ###
 
-Le Log de Références que git conserve vous permettre de faire certaines choses
+Le Log de références que git conserve vous permettre de faire certaines choses
 localement, comme:
 
 	master@{yesterday}

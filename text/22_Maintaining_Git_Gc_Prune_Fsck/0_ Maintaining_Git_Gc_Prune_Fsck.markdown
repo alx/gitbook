@@ -18,7 +18,7 @@ pas sur autre chose.
 
 ### Assurer la fiabilité ###
 
-La commande linkgit:git-fsck[1] lance une série de vérification de consistance
+La commande linkgit:git-fsck[1] lance une série de vérifications de consistance
 du dépôt, et rapporte les problèmes. Cela peut aussi prendre un peu de temps.
 L'avertissement le plus courant concerne les objets "dangling" (suspendus):
 
@@ -33,6 +33,6 @@ L'avertissement le plus courant concerne les objets "dangling" (suspendus):
     dangling tree b24c2473f1fd3d91352a624795be026d64c8841f
     ...
 
-Les objets suspendus ne posent aucun problèmes. Au pire ils prennent un petit
+Les objets suspendus ne posent aucun problème. Au pire, ils prennent un petit
 peu plus d'espace disque. Ils servent parfois de solution de dernier secours
 pour récupérer des travaux perdus.
