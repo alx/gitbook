@@ -8,6 +8,10 @@ require "uv"
 #MIN_SIZE = 1200
 MIN_SIZE = 800
 
+def encode_href(str)
+  str.gsub(/[^\x00-\x7F]/) { |c| c.bytes.map { |b| '%%%02X' % b }.join }
+end
+
 def do_replacements(html, type = :html)
 
   # highlight code
@@ -51,7 +55,7 @@ end
 desc 'Create the HTML version'
 task :html => :merge do
   
-  if File.exists?('output/full_book.markdown')
+  if File.exist?('output/full_book.markdown')
     output = File.new('output/full_book.markdown').read
     output = RDiscount.new(output).to_html
 
@@ -111,10 +115,10 @@ task :html => :merge do
       File.open(File.join(html_dir, chapter_file), 'w') do |f|
         nav = ''
         if (cf = chapter_files[index - 1]) && index != 0
-          nav += "<a href=\"#{cf[1]}\">Prev</a> "
+          nav += "<a href=\"#{encode_href(cf[1])}\">Prev</a> "
         end
         if cf = chapter_files[index + 1]
-          nav += " <a href=\"#{cf[1]}\">Next</a>"
+          nav += " <a href=\"#{encode_href(cf[1])}\">Next</a>"
         end
         html_template = File.new("layout/chapter_template.html").read
         html_template.gsub!("#title", chapter_title)
@@ -133,7 +137,7 @@ task :html => :merge do
             section_array.each do |chapter_title, chapter_file, chsize|
               toc.tr { toc.td {
                 (chsize > MIN_SIZE) ? extra = 'done' : extra = 'todo'
-                toc.a(:href => chapter_file, :class => "chapter-link #{extra}") << chapter_title
+                toc.a(:href => encode_href(chapter_file), :class => "chapter-link #{extra}") << chapter_title
               }}
             end
           end
@@ -146,7 +150,7 @@ task :html => :merge do
             section_array.each do |chapter_title, chapter_file, chsize|
               toc.tr { toc.td {
                 (chsize > MIN_SIZE) ? extra = 'done' : extra = 'todo'
-                toc.a(:href => chapter_file, :class => "chapter-link #{extra}") << chapter_title
+                toc.a(:href => encode_href(chapter_file), :class => "chapter-link #{extra}") << chapter_title
               }}
             end
           end
