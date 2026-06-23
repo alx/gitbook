@@ -63,9 +63,30 @@ task :html => :merge do
     
     # code highlighting
     File.open('output/index.html', 'w') do |f|
-      body = do_replacements(output, :pdf)
+      toc_entries = []
+      body_with_ids = output.gsub(/<h([12])>(.*?)<\/h\1>/m) do
+        level, raw_title = $1.to_i, $2
+        text = raw_title.gsub(/<[^>]+>/, '').strip
+        slug = text.downcase.gsub(/[^a-z0-9]+/, '-').gsub(/^-|-$/, '')
+        toc_entries << { level: level, text: text, id: slug }
+        "<h#{level} id=\"#{slug}\">#{raw_title}</h#{level}>"
+      end
+
+      toc_html = "<ul class=\"toc\">\n"
+      toc_entries.each_with_index do |entry, i|
+        if entry[:level] == 1
+          toc_html += "</ul></li>\n" if i > 0
+          toc_html += "<li class=\"chapter\"><a href=\"##{entry[:id]}\">#{entry[:text]}</a><ul>\n"
+        else
+          toc_html += "<li><a href=\"##{entry[:id]}\">#{entry[:text]}</a></li>\n"
+        end
+      end
+      toc_html += "</ul></li>\n</ul>\n"
+
+      body = do_replacements(body_with_ids, :pdf)
 
       html_template = File.new("layout/pdf_template.html").read
+      html_template.gsub!("#toc", toc_html)
       html_template.gsub!("#body", body)
 
       
