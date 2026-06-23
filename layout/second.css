@@ -384,9 +384,12 @@ div.titlepage p, div.halftitlepage p {
 
 /* TOC */
 
-ul.toc, ul.toc ul { 
+ul.toc, ul.toc ul {
   list-style-type: none;
   margin: 0; padding: 0;
+}
+ul.toc {
+  counter-reset: toc-chapter;
 }
 ul.toc ul {
   margin-left: 1em;

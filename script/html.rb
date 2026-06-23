@@ -64,10 +64,13 @@ task :html => :merge do
     # code highlighting
     File.open('output/index.html', 'w') do |f|
       toc_entries = []
+      slug_counts = Hash.new(0)
       body_with_ids = output.gsub(/<h([12])>(.*?)<\/h\1>/m) do
         level, raw_title = $1.to_i, $2
         text = raw_title.gsub(/<[^>]+>/, '').strip
-        slug = text.downcase.gsub(/[^a-z0-9]+/, '-').gsub(/^-|-$/, '')
+        base_slug = text.downcase.gsub(/[^a-z0-9]+/, '-').gsub(/^-|-$/, '')
+        slug_counts[base_slug] += 1
+        slug = slug_counts[base_slug] > 1 ? "#{base_slug}-#{slug_counts[base_slug]}" : base_slug
         toc_entries << { level: level, text: text, id: slug }
         "<h#{level} id=\"#{slug}\">#{raw_title}</h#{level}>"
       end
